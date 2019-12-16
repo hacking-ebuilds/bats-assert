@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay-maintainer@mad-hacking.net</email>
+		<name>Overlay Maintainer</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">jasonkarns/bats-assert-1</remote-id>
+		<maintainer>
+			<email>default-package-maintainer@mad-hacking.net</email>
+			<name>Default Package Maintainer</name>
+		</maintainer>
+		<bugs-to>https://github.com/hacking-ebuilds/bats-assert/issues</bugs-to>
+		<doc>https://github.com/jasonkarns/bats-assert-1/wiki</doc>
+	</upstream>
+	<longdescription lang="en">
+		bats-assert is a helper library providing common assertions for Bats.
+
+		Assertions are functions that perform a test and output relevant information on failure to
+		help debugging. They return 1 on failure and 0 otherwise. Output, formatted for readability,
+		is sent to the standard error to make assertions usable outside of @test blocks too.
+
+		Assertions testing exit code and output operate on the results of the most recent invocation
+		of run.
+	</longdescription>
+</pkgmetadata>
