@@ -13,6 +13,7 @@ if [[ ${PV} = *9999* ]]; then
 	EGIT_COMMIT="v2.0.0"
 else
 	SRC_URI="https://github.com/jasonkarns/${PN}-1/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}/${PN}-1-${PV}"
 fi
 
 KEYWORDS=""
@@ -23,8 +24,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-util/bats-support"
 DEPEND="test? ( ${RDEPEND} )"
-
-S="${WORKDIR}/${PN}-1-${PV}"
 
 src_test() {
 	TEST_DEPS_DIR="/usr/lib" /usr/bin/bats --tap test || die "Tests failed"
