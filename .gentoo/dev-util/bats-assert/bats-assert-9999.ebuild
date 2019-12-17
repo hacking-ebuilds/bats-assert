@@ -10,7 +10,7 @@ LICENSE="CC0-1.0"
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/jasonkarns/bats-assert-1.git"
-	EGIT_BRANCH="v2.0.0"
+	EGIT_COMMIT="v2.0.0"
 else
 	SRC_URI="https://github.com/jasonkarns/${PN}-1/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 fi
