@@ -24,6 +24,8 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-util/bats-support"
 DEPEND="test? ( ${RDEPEND} )"
 
+S="${WORKDIR}/${PN}-1-${PV}"
+
 src_test() {
 	TEST_DEPS_DIR="/usr/lib" /usr/bin/bats --tap test || die "Tests failed"
 }
