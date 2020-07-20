@@ -4,16 +4,14 @@
 EAPI=7
 
 DESCRIPTION="A helper library providing common assertions for bats / bats-core"
-HOMEPAGE="https://github.com/jasonkarns/bats-assert-1"
+HOMEPAGE="https://github.com/bats-core/bats-assert"
 LICENSE="CC0-1.0"
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/jasonkarns/bats-assert-1.git"
-	EGIT_COMMIT="v2.0.0"
+	EGIT_REPO_URI="https://github.com/bats-core/bats-assert.git"
 else
-	SRC_URI="https://github.com/jasonkarns/${PN}-1/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/${PN}-1-${PV}"
+	SRC_URI="https://github.com/bats-core/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 fi
 
 KEYWORDS=""
